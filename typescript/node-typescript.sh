@@ -9,6 +9,8 @@ done
 mkdir $1/src || (echo "Couldn't create src folder ")
 
 cd $1  || (echo "Error" && exit 1)
+echo "Initiate Git ..."
+git init
 echo "___________${UGreen}Install Packaeges___________"
 echo "1-Creating package.json..."
 npm init -y
